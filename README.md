@@ -1,4 +1,4 @@
-[Google Play ](https://play.google.com/store/apps/dev?id=4763171503902347202)    [Stackoverflow](https://stackoverflow.com/users/12793676/vadiole)    [Telegram](https://t.me/vadiole)
+[Google Play ](https://play.google.com/store/apps/dev?id=4763171503902347202)    [Stack Overflow](https://stackoverflow.com/users/12793676/vadiole)    [Telegram](https://t.me/vadiole)
 
 <h2 align="start">Hi, I am a full-time remote Android developer</h1>
 
