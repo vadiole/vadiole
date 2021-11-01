@@ -1,16 +1,15 @@
-### Hi there 👋
+[Google Play ](https://play.google.com/store/apps/dev?id=4763171503902347202)    [Stackoverflow](https://stackoverflow.com/users/12793676/vadiole)    [Telegram](https://t.me/vadiole)
 
-<!--
-**vadiole/vadiole** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h2 align="start">Hi, I am a full-time remote Android developer</h1>
 
-Here are some ideas to get you started:
+My main skills:
+- Android SDK, Kotlin, Java
+- Android Jetpack, Firebase
+- Material, animation
+- Speedcubing, joggling
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+      \
+Besides Android development I am interested in drones, photography and exploring underground structures.
+I like to listen about psychology, space and physics.
+I love my girlfriend, the sea, the autumn sun, melodic music, Bradbury stories, traveling and hiking
