@@ -13,3 +13,7 @@ My main skills:
 Besides Android development I am interested in drones, photography and exploring underground structures.
 I like to listen about psychology, space and physics.
 I love my girlfriend, the sea, the autumn sun, melodic music, Bradbury stories, traveling and hiking
+
+
+swap `` ` `` and `` ' ``
+
