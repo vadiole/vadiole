@@ -2,12 +2,7 @@
 
 <h2 align="start">Hi, I am Android Software Engineer</h1>
 
-My main skills:
-- Android SDK, Kotlin, Java
-- Android Jetpack, Firebase
-- Material, animation
-- Speedcubing, joggling
-
+I create apps for Android. And I love doing it
 
       \
 Besides Android development I am interested in drones, photography and exploring underground structures.
