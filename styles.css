@@ -1,0 +1,58 @@
+/** CSS **/
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+
+:root {
+  --gap: 14px;
+  --font-small: 14px;
+  --width: 575px;
+  --border: 1.5px;
+  --radius: 4px;
+  --gray-text: rgba(0, 0, 0, 0.4);
+  --gray-line: rgba(0, 0, 0, 0.2);
+  --gray-bg: rgba(0, 0, 0, 0.06);
+  --text: #000;
+  --width-limit: 60rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(10, 10, 10);
+  min-height:100%;
+  overflow:scroll; 
+}
+
+
+#menu {
+  align-items: center;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-grow: 1;
+  height: 5rem;
+  justify-content: start;
+  max-width: var(--width-limit);
+}
+
+.menu-item {
+  color: rgba(255, 255, 255, 0.6);
+  height: 100%;
+  align-content: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.5rem;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: color 10000ms, text-decoration-color 200ms;
+}
+
+
+.menu-item.active {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration-color: rgba(255, 255, 255, 0.8);
+}
+
+.menu-item:hover {
+  color: white;
+  text-decoration-color: white;
+}
