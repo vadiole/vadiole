@@ -1,0 +1,72 @@
+html {
+    min-height: 100%;
+    background: #fbfaf8;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    background: #fbfaf8;
+    color: #1f1d1b;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.page {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.left {
+    flex-grow: 100;
+    min-width: 1rem;
+    max-width: 4rem;
+}
+
+.content {
+    max-width: 31rem;
+}
+
+.right {
+    flex-grow: 100;
+    min-width: 1rem;
+}
+
+h1 {
+    margin: 0 0 0.67em;
+    font-size: 2rem;
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+p {
+    margin: 1em 0;
+}
+
+a {
+    color: #660000;
+    text-decoration-thickness: 0.06em;
+    text-underline-offset: 0.16em;
+}
+
+a:hover,
+a:focus-visible {
+    color: #400000;
+}
+
+@media (max-width: 560px) {
+    body {
+        font-size: 15px;
+    }
+
+    .page {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
