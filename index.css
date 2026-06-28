@@ -1,72 +1,82 @@
-html {
-    min-height: 100%;
-    background: #fbfaf8;
+* {
+    box-sizing: border-box;
 }
 
+:root {
+    color-scheme: light dark;
+    --page-space: clamp(1rem, 6vw, 6rem);
+    --page-top-space: clamp(0.6rem, 3.6vw, 3.6rem);
+}
+
+/* Must use the native default background. */
 body {
-    min-height: 100%;
     margin: 0;
-    background: #fbfaf8;
-    color: #1f1d1b;
+    color: #171717;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.55;
+}
+
+h1 {
+    margin: 0 0 1.25rem;
+    font-size: clamp(1.75rem, 1.45rem + 1vw, 2rem);
+    line-height: 1.15;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+p:last-child {
+    margin-bottom: 0;
 }
 
 .page {
     display: flex;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    margin-top: var(--page-top-space);
+    margin-bottom: 1.5rem;
 }
 
 .left {
-    flex-grow: 100;
-    min-width: 1rem;
-    max-width: 4rem;
+    flex: 0 0 var(--page-space);
 }
 
 .content {
-    max-width: 31rem;
+    max-width: 36rem;
+    min-width: 0;
 }
 
 .right {
-    flex-grow: 100;
-    min-width: 1rem;
-}
-
-h1 {
-    margin: 0 0 0.67em;
-    font-size: 2rem;
-    line-height: 1.15;
-    font-weight: 700;
-}
-
-p {
-    margin: 1em 0;
+    min-width: var(--page-space);
+    flex-grow: 1;
 }
 
 a {
-    color: #660000;
-    text-decoration-thickness: 0.06em;
-    text-underline-offset: 0.16em;
+    color: #8c471c;
+    text-underline-offset: 0.14em;
 }
 
 a:hover,
 a:focus-visible {
-    color: #400000;
+    color: #5f3617;
 }
 
-@media (max-width: 560px) {
+a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 0.18em;
+}
+
+@media (prefers-color-scheme: dark) {
     body {
-        font-size: 15px;
+        color: CanvasText;
     }
 
-    .page {
-        padding-top: 20px;
-        padding-bottom: 20px;
+    a {
+        color: rgb(217 161 122);
     }
 
-    h1 {
-        font-size: 1.8rem;
+    a:hover,
+    a:focus-visible {
+        color: rgb(224 185 148);
     }
 }
