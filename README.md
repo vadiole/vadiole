@@ -2,7 +2,7 @@
 
 <h2 align="start">   </h1>
 
-Hi, I’m Dymytrii, an Android Software Engineer
+Hi, I’m Dimitrii, an Android Software Engineer
 
 I love designing and building seamless, elegant apps. Here you’ll find source codes for my projects and a few small creations I’m proud of 
 
