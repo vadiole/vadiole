@@ -39,7 +39,8 @@ It's a selection of things the user values and cares about: projects, ideas, and
 - Name branches simply, after the user's request. Each branch is a new scope, so agree on the name with the user first.
 - Commit finished work, scoped so the history reads like a changelog; amend or squash when it makes sense. Messages are one-line, lowercase, high-level goals or outcomes, e.g. `the new photos page is available via photography link from the main page`, `fixed light rendering`, `improved performance on firefox`, `simplified code so it's easier to support`.
 - Stage explicit paths; don't commit unrelated changes.
-- Create PRs on request, with a minimal one-sentence description of the outcome, plus risks or critical info.
+- Create PRs on explicit request from the user, or with an explicit ok when it's the only step left.
+- PR description is a minimal one-sentence summary of the outcome, plus risks or critical info.
 
 ## Meta rules
 
