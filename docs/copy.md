@@ -1,4 +1,11 @@
-# Copy
+# copy
+
+## index.html
+
+title: vadiole
+description: vadiole (Dimitrii). Personal website.
+og:title: vadiole
+og:description: I'm building beautiful and useful apps for humans.
 
 vadiole (Dimitrii)
 
@@ -12,3 +19,11 @@ Projects
 [unicode](https://play.google.com/store/apps/details?id=vadiole.unicode) – character and emoji explorer.
 
 Connect with me on [github](https://github.com/vadiole) or at xdmitree at gmail dot com.
+
+## 404.html
+
+title: 404
+
+404
+
+This page doesn't exist, go back to [vadiole.me](/).
