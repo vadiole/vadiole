@@ -18,7 +18,7 @@ Projects
 [tremor](https://play.google.com/store/apps/details?id=vadiole.tremor) – beautiful haptic tester for android.
 [unicode](https://play.google.com/store/apps/details?id=vadiole.unicode) – character and emoji explorer.
 
-Connect with me on [github](https://github.com/vadiole) or at xdmitree at gmail dot com.
+You can find my code on [github](https://github.com/vadiole), and connect via [xdmitree@gmail.com](mailto:xdmitree@gmail.com).
 
 ## 404.html
 
