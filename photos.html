@@ -33,11 +33,12 @@
     </main>
     <script>
         const img = document.querySelector('.photo img');
-        if (!img.complete) {
-            const timer = setTimeout(() => img.classList.add('loading'), 200);
+        const cached = img.complete;
+        if (!cached) {
+            const slow = setTimeout(() => img.classList.add('slow'), 200);
             img.addEventListener('load', () => {
-                clearTimeout(timer);
-                img.classList.remove('loading');
+                clearTimeout(slow);
+                img.classList.remove('slow');
             }, { once: true });
         }
     </script>

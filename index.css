@@ -4,7 +4,7 @@
 
 :root {
     color-scheme: light dark;
-    overflow-x: clip;
+    --frame: 3.75rem;
     --bg: #fdfdfc;
     --outside: #fbfbfa;
     --text: #21201c;
@@ -30,7 +30,7 @@ body {
     margin: 0;
     padding: 0 1rem;
     color: var(--text);
-    background: var(--outside);
+    background: var(--bg);
     font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
     font-size: 1rem;
     line-height: 1.55;
@@ -40,36 +40,51 @@ body {
 }
 
 .sheet {
-    position: relative;
     max-width: calc(42rem + 5rem);
-    min-height: calc(100svh - 7.5rem);
-    margin: 3.75rem auto;
+    min-height: 100svh;
+    margin: 0 auto;
     padding: 3.75rem 2.5rem;
-    background: var(--bg);
 }
 
-.sheet::before,
-.sheet::after {
-    content: "";
-    position: absolute;
-    pointer-events: none;
-}
+@media (min-width: 513px) and (min-height: 513px) {
+    :root {
+        overflow-x: clip;
+    }
 
-.sheet::before {
-    inset: 0 auto;
-    left: 50%;
-    width: 100vw;
-    transform: translateX(-50%);
-    background:
-        linear-gradient(90deg, var(--rail) 6px, transparent 0) left top / 10px 1px repeat-x,
-        linear-gradient(90deg, var(--rail) 6px, transparent 0) left bottom / 10px 1px repeat-x;
-}
+    body {
+        background: var(--outside);
+    }
 
-.sheet::after {
-    inset: -3.75rem 0;
-    background:
-        linear-gradient(var(--rail) 6px, transparent 0) left top / 1px 10px repeat-y,
-        linear-gradient(var(--rail) 6px, transparent 0) right top / 1px 10px repeat-y;
+    .sheet {
+        position: relative;
+        min-height: calc(100svh - 2 * var(--frame));
+        margin-block: var(--frame);
+        background: var(--bg);
+    }
+
+    .sheet::before,
+    .sheet::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .sheet::before {
+        inset: 0 auto;
+        left: 50%;
+        width: 100vw;
+        transform: translateX(-50%);
+        background:
+            linear-gradient(90deg, var(--rail) 6px, transparent 0) left top / 10px 1px repeat-x,
+            linear-gradient(90deg, var(--rail) 6px, transparent 0) left bottom / 10px 1px repeat-x;
+    }
+
+    .sheet::after {
+        inset: calc(-1 * var(--frame)) 0;
+        background:
+            linear-gradient(var(--rail) 6px, transparent 0) left top / 1px 10px repeat-y,
+            linear-gradient(var(--rail) 6px, transparent 0) right top / 1px 10px repeat-y;
+    }
 }
 
 h1,
@@ -208,7 +223,7 @@ a[href^="mailto:"] {
     height: auto;
 }
 
-.photo img.loading {
+.photo img.slow {
     opacity: 0;
 }
 
@@ -217,7 +232,7 @@ a[href^="mailto:"] {
         transition: opacity 0.6s ease-out;
     }
 
-    .photo img.loading {
+    .photo img.slow {
         transition: none;
     }
 }
@@ -225,18 +240,10 @@ a[href^="mailto:"] {
 @media (max-width: 512px) {
     body {
         padding: 0 1.5rem;
-        background: var(--bg);
     }
 
     .sheet {
-        min-height: 100svh;
-        margin-block: 0;
         padding: 3.75rem 0;
-    }
-
-    .sheet::before,
-    .sheet::after {
-        content: none;
     }
 
     .links {
