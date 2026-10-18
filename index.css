@@ -4,28 +4,30 @@
 
 :root {
     color-scheme: light dark;
-    --text: #171717;
-    --muted: #6f6f6f;
-    --rail: #e5e5e5;
-    --hover: rgb(0 0 0 / 0.04);
-    --underline: #949494;
+    --bg: #fdfdfc;
+    --text: #21201c;
+    --muted: #706f6a;
+    --rail: #e6e4df;
+    --hover: rgb(60 50 30 / 0.05);
+    --underline: #b0aea6;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --text: CanvasText;
-        --muted: #9a9692;
-        --rail: #2c2a28;
-        --hover: rgb(255 255 255 / 0.05);
-        --underline: #6b6b6b;
+        --bg: #1b1a18;
+        --text: #ebe8e1;
+        --muted: #98948c;
+        --rail: #3c3b38;
+        --hover: rgb(255 245 230 / 0.05);
+        --underline: #5f5b55;
     }
 }
 
-/* Must use the native default background. */
 body {
     margin: 0;
     padding: 0 1rem;
     color: var(--text);
+    background: var(--bg);
     font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
     font-size: 1rem;
     line-height: 1.55;
