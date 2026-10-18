@@ -30,6 +30,8 @@ body {
     font-size: 1rem;
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 .sheet {
@@ -109,9 +111,15 @@ a[href^="mailto:"] {
     padding: 0.5rem 0.75rem;
     border-radius: 0.5rem;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.item:hover,
+@media (hover: hover) {
+    .item:hover {
+        background: var(--hover);
+    }
+}
+
 .item:active,
 .item:focus-visible {
     background: var(--hover);
