@@ -13,6 +13,7 @@ It's a selection of things the user values and cares about: projects, ideas, and
 
 - Quiet, text first, every element must earn its place.
 - A centered paper sheet with dashed side rails; no rails on phones.
+- Warm paper colors in light and dark, kept as tokens in `index.css`; no pure white or black.
 - Every new element or style must be approved by the user.
 - Links inline with text.
 - Mobile is as important as desktop.
