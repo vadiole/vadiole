@@ -35,12 +35,12 @@ Interesting things
 
 ## photos.html
 
-title: Dimitrii – photos
+title: Dimitrii / photos
 description: Gallery is under construction at the moment
-og:title: Dimitrii – photos
+og:title: Dimitrii / photos
 og:description: Gallery is under construction at the moment
 
-[Dimitrii](/)
+[Dimitrii](/) / photos
 
 ![B&w photo of horses grazing on a hill near sea cliffs in the rain.](/photo/fuji-1.avif)
 
