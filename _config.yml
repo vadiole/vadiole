@@ -2,3 +2,4 @@ exclude:
   - AGENTS.md
   - README.md
   - docs
+  - serve.py

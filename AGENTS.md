@@ -31,7 +31,7 @@ It's a selection of things the user values and cares about: projects, ideas, and
 
 ## Verification
 
-- Preview with `python3 -m http.server`.
+- Preview with `python3 serve.py`. Like GitHub Pages, it serves `photos.html` at `/photos` and the 404 page; `python3 -m http.server` breaks extensionless links. It sends `no-cache`, so edits show on refresh, while GitHub Pages caches files for 10 minutes.
 - Check visual changes with headless screenshots, e.g. `npx -y playwright screenshot --viewport-size=320,800 --color-scheme=dark --full-page <url> <file>`.
 - Cover 320px and wide desktop, light and dark, and JavaScript off when the change involves it.
 - Keep screenshots out of the repo.
