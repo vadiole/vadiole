@@ -41,7 +41,8 @@
         </section>
     </main>
     <script>
-        if (/Android/.test(navigator.userAgent)) {
+        const hasPlayStoreRedirect = /Android/.test(navigator.userAgent);
+        if (hasPlayStoreRedirect) {
             document.querySelectorAll('a[href*="play.google.com"]').forEach(a => a.removeAttribute('target'));
         }
     </script>
