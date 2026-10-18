@@ -4,7 +4,9 @@
 
 :root {
     color-scheme: light dark;
+    overflow-x: clip;
     --bg: #fdfdfc;
+    --outside: #fbfbfa;
     --text: #21201c;
     --muted: #706f6a;
     --rail: #e6e4df;
@@ -15,6 +17,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: #1b1a18;
+        --outside: #191916;
         --text: #ebe8e1;
         --muted: #98948c;
         --rail: #3c3b38;
@@ -27,7 +30,7 @@ body {
     margin: 0;
     padding: 0 1rem;
     color: var(--text);
-    background: var(--bg);
+    background: var(--outside);
     font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
     font-size: 1rem;
     line-height: 1.55;
@@ -37,10 +40,33 @@ body {
 }
 
 .sheet {
+    position: relative;
     max-width: calc(42rem + 5rem);
-    min-height: 100svh;
-    margin: 0 auto;
-    padding: 7.5rem 2.5rem;
+    min-height: calc(100svh - 7.5rem);
+    margin: 3.75rem auto;
+    padding: 3.75rem 2.5rem;
+    background: var(--bg);
+}
+
+.sheet::before,
+.sheet::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+}
+
+.sheet::before {
+    inset: 0 auto;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background:
+        linear-gradient(90deg, var(--rail) 6px, transparent 0) left top / 10px 1px repeat-x,
+        linear-gradient(90deg, var(--rail) 6px, transparent 0) left bottom / 10px 1px repeat-x;
+}
+
+.sheet::after {
+    inset: -3.75rem 0;
     background:
         linear-gradient(var(--rail) 6px, transparent 0) left top / 1px 10px repeat-y,
         linear-gradient(var(--rail) 6px, transparent 0) right top / 1px 10px repeat-y;
@@ -199,11 +225,18 @@ a[href^="mailto:"] {
 @media (max-width: 512px) {
     body {
         padding: 0 1.5rem;
+        background: var(--bg);
     }
 
     .sheet {
+        min-height: 100svh;
+        margin-block: 0;
         padding: 3.75rem 0;
-        background: none;
+    }
+
+    .sheet::before,
+    .sheet::after {
+        content: none;
     }
 
     .links {
