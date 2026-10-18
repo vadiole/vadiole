@@ -4,6 +4,7 @@
 
 :root {
     color-scheme: light dark;
+    background: var(--bg);
     --frame: 3.75rem;
     --bg: #fdfdfc;
     --outside: #fbfbfa;
@@ -30,7 +31,6 @@ body {
     margin: 0;
     padding: 0 1rem;
     color: var(--text);
-    background: var(--bg);
     font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
     font-size: 1rem;
     line-height: 1.55;
@@ -48,18 +48,24 @@ body {
 
 @media (min-width: 513px) and (min-height: 513px) {
     :root {
-        overflow-x: clip;
-    }
-
-    body {
+        --period: 10px;
+        --dash-x: linear-gradient(90deg, var(--rail) 3px, transparent 0 8px, var(--rail) 0);
+        --dash-y: linear-gradient(var(--rail) 3px, transparent 0 8px, var(--rail) 0);
+        container-type: inline-size;
         background: var(--outside);
     }
 
     .sheet {
         position: relative;
-        min-height: calc(100svh - 2 * var(--frame));
+        width: calc(round(down, min(100%, 42rem + 5rem) - 1px, var(--period)) + 1px);
+        min-height: calc(round(down, 100svh - 2 * var(--frame) - 1px, var(--period)) + 1px);
         margin-block: var(--frame);
         background: var(--bg);
+    }
+
+    .links {
+        /* rounds the home height to the dash period until calc-size() is everywhere: https://developer.mozilla.org/en-US/docs/Web/CSS/calc-size */
+        padding-bottom: 3.25px;
     }
 
     .sheet::before,
@@ -70,20 +76,17 @@ body {
     }
 
     .sheet::before {
-        inset: 0 auto;
-        left: 50%;
-        width: 100vw;
-        transform: translateX(-50%);
+        inset: 0 calc(50% - 50cqw) 0 calc(-1 * round(up, 50cqw, var(--period)));
         background:
-            linear-gradient(90deg, var(--rail) 6px, transparent 0) left top / 10px 1px repeat-x,
-            linear-gradient(90deg, var(--rail) 6px, transparent 0) left bottom / 10px 1px repeat-x;
+            var(--dash-x) left top / var(--period) 1px repeat-x,
+            var(--dash-x) left bottom / var(--period) 1px repeat-x;
     }
 
     .sheet::after {
         inset: calc(-1 * var(--frame)) 0;
         background:
-            linear-gradient(var(--rail) 6px, transparent 0) left top / 1px 10px repeat-y,
-            linear-gradient(var(--rail) 6px, transparent 0) right top / 1px 10px repeat-y;
+            var(--dash-y) left var(--frame) / 1px var(--period) repeat-y,
+            var(--dash-y) right var(--frame) / 1px var(--period) repeat-y;
     }
 }
 
