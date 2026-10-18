@@ -24,7 +24,8 @@ It's a selection of things the user values and cares about: projects, ideas, and
 - Plain HTML and CSS. No build step, frameworks, or dependencies.
 - JavaScript loaded and used only where needed. Content and links must work without it.
 - Respect `prefers-reduced-motion`.
-- Pages: `index.html` and `404.html`. A new page needs the user's approval.
+- Pages: `index.html`, `photos.html`, and `404.html`. A new page needs the user's approval.
+- URLs are short, lowercase, and easy to say aloud: `/photos`, `/photo/fuji-1.avif`. Pages have no `.html` in links, no dates, and no nesting unless it's needed.
 - Keep `sitemap.xml` and page meta in sync when pages change.
 - Files that aren't part of the site go into `exclude` in `_config.yml`.
 
