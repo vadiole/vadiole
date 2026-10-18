@@ -12,7 +12,8 @@ It's a selection of things the user values and cares about: projects, ideas, and
 ## Current design
 
 - Quiet, text first, every element must earn its place.
-- A centered paper sheet with dashed side rails; no rails on phones.
+- A centered paper sheet on a slightly darker background, framed by dashed lines that run to the window edges. On phones, no frame and one color.
+- The outside is barely darker than the paper, the same perceived step in both modes (OKLab ΔL ≈ 0.6): `#fbfbfa` in light, `#191916` in dark.
 - Warm paper colors in light and dark, kept as tokens in `index.css`; no pure white or black.
 - Every new element or style must be approved by the user.
 - Links inline with text.
