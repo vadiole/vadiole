@@ -12,6 +12,7 @@ It's a selection of things the user values and cares about: projects, ideas, and
 ## Current design
 
 - Quiet, text first, every element must earn its place.
+- A centered paper sheet with dashed side rails; no rails on phones.
 - Every new element or style must be approved by the user.
 - Links inline with text.
 - Mobile is as important as desktop.
