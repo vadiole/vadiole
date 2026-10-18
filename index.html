@@ -40,5 +40,10 @@
             <p><a href="https://github.com/emilkowalski/skills" target="_blank" rel="noopener noreferrer">github.com/emilkowalski/skills</a> – skills to build better UI with agents</p>
         </section>
     </main>
+    <script>
+        if (/Android/.test(navigator.userAgent)) {
+            document.querySelectorAll('a[href*="play.google.com"]').forEach(a => a.removeAttribute('target'));
+        }
+    </script>
 </body>
 </html>
