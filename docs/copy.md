@@ -2,23 +2,36 @@
 
 ## index.html
 
-title: vadiole
-description: vadiole (Dimitrii). Personal website.
-og:title: vadiole
-og:description: I'm building beautiful and useful apps for humans.
+title: Dimitrii
+description: Dimitrii. Personal website.
+og:title: Dimitrii
+og:description: I love to build high-quality experiences for humans.
 
-vadiole (Dimitrii)
+Dimitrii
 
-I'm building beautiful and useful apps for humans.
+I love to build high-quality experiences for humans.
 
-In the past, I've enjoyed working on design systems, accessibility, and animations. I care about product craft and small details. I like taking photos, exploring nature, and learning about economics and psychology.
+I'm constantly learning and exploring new ideas. I deeply care about user interfaces, tools, and making technology accessible.
+
+I take photos.
 
 Projects
 
-[tremor](https://play.google.com/store/apps/details?id=vadiole.tremor) – beautiful haptic tester for android.
-[unicode](https://play.google.com/store/apps/details?id=vadiole.unicode) – character and emoji explorer.
+[tremor](https://play.google.com/store/apps/details?id=vadiole.tremor)
+haptic tester for android
+
+[unicode](https://play.google.com/store/apps/details?id=vadiole.unicode)
+character and emoji explorer
+
+Connections
 
 You can find my code on [github](https://github.com/vadiole), and connect via [xdmitree@gmail.com](mailto:xdmitree@gmail.com).
+
+Interesting things
+
+[everynoise.com](https://everynoise.com/) – the best place to discover new music
+[interfaces.rauno.me](https://interfaces.rauno.me/) – guidelines for good UI
+[github.com/emilkowalski/skills](https://github.com/emilkowalski/skills) – skills for designers and engineers for better UI
 
 ## 404.html
 
