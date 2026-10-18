@@ -2,12 +2,12 @@
 
 ## index.html
 
-title: Dimitrii
+title: Dimitri @vadiole
 description: I love to build high-quality experiences for humans.
-og:title: Dimitrii
+og:title: Dimitri @vadiole
 og:description: I love to build high-quality experiences for humans.
 
-Dimitrii
+Dimitri
 
 I love to build high-quality experiences for humans. I care about user interfaces, tools, and making technology accessible.
 
@@ -35,12 +35,12 @@ Things I like
 
 ## photos.html
 
-title: Dimitrii / photos
+title: Dimitri / photos
 description: My photos page is under construction.
-og:title: Dimitrii / photos
+og:title: Dimitri / photos
 og:description: My photos page is under construction.
 
-[Dimitrii](/) / photos
+[Dimitri](/) / photos
 
 ![Horses grazing on a hill near sea cliffs in the rain, in black and white.](/photo/fuji-1.avif)
 
