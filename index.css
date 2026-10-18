@@ -38,7 +38,7 @@ body {
 
 .sheet {
     max-width: calc(42rem + 5rem);
-    min-height: 100vh;
+    min-height: 100svh;
     margin: 0 auto;
     padding: 7.5rem 2.5rem;
     background:
@@ -90,6 +90,7 @@ a {
     text-decoration-color: var(--underline);
     text-decoration-thickness: 1px;
     text-underline-offset: 0.18em;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @media (hover: hover) {
@@ -125,7 +126,6 @@ a[href^="mailto:"] {
     padding: 0.5rem 0.75rem;
     border-radius: 0.5rem;
     text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
 }
 
 @media (hover: hover) {
@@ -197,6 +197,10 @@ a[href^="mailto:"] {
 }
 
 @media (max-width: 512px) {
+    body {
+        padding: 0 1.5rem;
+    }
+
     .sheet {
         padding: 3.75rem 0;
         background: none;
