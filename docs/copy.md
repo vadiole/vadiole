@@ -13,7 +13,7 @@ I love to build high-quality experiences for humans. I care about user interface
 
 I live in Kraków, Poland, and take [photos](/photos) with my Fujifilm X-M5.
 
-In the past, I developed the design system at [BetterMe](https://betterme.world/products).
+In the past, I developed the design system and workout experiences at [BetterMe](https://betterme.world/products).
 
 Projects
 
