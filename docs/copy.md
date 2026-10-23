@@ -29,9 +29,46 @@ You can find my code on [github](https://github.com/vadiole), and write me at [x
 
 Things I like
 
+[vadiole.me/people](https://vadiole.me/people) – personal websites I recommend
 [everynoise.com](https://everynoise.com/) – the best place to discover new music
 [interfaces.rauno.me](https://interfaces.rauno.me/) – guidelines for good UI
 [github.com/emilkowalski/skills](https://github.com/emilkowalski/skills) – skills to build better UI with agents
+
+## people.html
+
+title: Dimitri / people
+description: Personal websites I like and recommend.
+og:title: Dimitri / people
+og:description: Personal websites I like and recommend.
+
+[Dimitri](/) / people
+
+Do you have a personal website?\
+I think it’s a wonderful idea to have your own corner of the internet.
+
+Here I collect personal websites I like and recommend. You might find great advice, ideas, projects, prototypes, photos, and much more.
+
+[brianlovin.com](https://brianlovin.com/)
+[chankarunamuni.com](https://www.chankarunamuni.com/)
+[daneden.me](https://daneden.me/)
+[emilkowal.ski](https://emilkowal.ski/)
+[jennywen.ca](https://jennywen.ca/)
+[jhey.dev](https://www.jhey.dev/)
+[joshpuckett.me](https://joshpuckett.me/)
+[julian.digital](https://julian.digital/)
+[juliezhuo.com](https://juliezhuo.com/)
+[karrisaarinen.com](https://karrisaarinen.com/)
+[leerob.com](https://leerob.com/)
+[nelson.co](https://nelson.co/)
+[paco.me](https://paco.me/)
+[parkerhendo.com](https://www.parkerhendo.com/)
+[ped.ro](https://ped.ro/)
+[rauchg.com](https://rauchg.com/)
+[rauno.me](https://rauno.me/)
+[rsms.me](https://rsms.me/)
+[shud.in](https://shud.in/)
+[stephango.com](https://stephango.com/)
+[tonsky.me](https://tonsky.me/)
 
 ## photos.html
 
