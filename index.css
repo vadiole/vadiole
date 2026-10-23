@@ -5,26 +5,22 @@
 :root {
     color-scheme: light dark;
     background: var(--bg);
-    --frame: 3.75rem;
-    --bg: #fdfdfc;
-    --outside: #fbfbfa;
-    --text: #21201c;
-    --muted: #706f6a;
-    --rail: #e6e4df;
-    --hover: rgb(60 50 30 / 0.05);
-    --underline: #b0aea6;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #1b1a18;
-        --outside: #191916;
-        --text: #ebe8e1;
-        --muted: #98948c;
-        --rail: #3c3b38;
-        --hover: rgb(255 245 230 / 0.05);
-        --underline: #5f5b55;
-    }
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-5: 2.5rem;
+    --space-8: 4rem;
+    --space-14: 7rem;
+    --space-21: 10.5rem;
+    --frame: var(--space-8);
+    --bg: light-dark(#fdfdfc, #1b1a18);
+    --outside: light-dark(#fbfbfa, #191916);
+    --text: light-dark(#21201c, #ebe8e1);
+    --muted: light-dark(#706f6a, #98948c);
+    --rail: light-dark(#e6e4df, #3c3b38);
+    --hover: light-dark(#3c321e0d, #fff5e60d);
+    --underline: light-dark(#b0aea6, #5f5b55);
+    --link-underline: light-dark(#bfbeb7, #5f5b55);
 }
 
 body {
@@ -33,7 +29,7 @@ body {
     color: var(--text);
     font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
     font-size: 1rem;
-    line-height: 1.55;
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
@@ -43,7 +39,7 @@ body {
     max-width: calc(42rem + 5rem);
     min-height: 100svh;
     margin: 0 auto;
-    padding: 3.75rem 2.5rem;
+    padding: var(--space-8) var(--space-5);
 }
 
 @media (min-width: 513px) and (min-height: 513px) {
@@ -61,11 +57,8 @@ body {
         min-height: calc(round(down, 100svh - 2 * var(--frame) - 1px, var(--period)) + 1px);
         margin-block: var(--frame);
         background: var(--bg);
-    }
-
-    .links {
-        /* rounds the home height to the dash period until calc-size() is everywhere: https://developer.mozilla.org/en-US/docs/Web/CSS/calc-size */
-        padding-bottom: 3.25px;
+        /* --offset rounds the page height to the dash period until calc-size() is everywhere: https://developer.mozilla.org/en-US/docs/Web/CSS/calc-size */
+        padding-bottom: calc(var(--space-8) + var(--offset, 0px));
     }
 
     .sheet::before,
@@ -92,13 +85,9 @@ body {
 
 h1,
 h2 {
-    margin: 0;
+    margin: 0 0 var(--space-2);
     font-size: inherit;
     font-weight: 600;
-}
-
-h1 {
-    margin-bottom: 1.5rem;
 }
 
 h1 a {
@@ -113,12 +102,12 @@ h1 span {
     color: var(--underline);
 }
 
-h2 {
-    margin-bottom: 1.8125rem;
+h2:has(+ .item) {
+    margin-bottom: var(--space-1);
 }
 
 p {
-    margin: 0 0 1rem;
+    margin: 0 0 var(--space-2);
 }
 
 p:last-child {
@@ -126,12 +115,12 @@ p:last-child {
 }
 
 section {
-    margin-top: 6.75rem;
+    margin-top: var(--space-14);
 }
 
 a {
     color: inherit;
-    text-decoration-color: var(--underline);
+    text-decoration-color: var(--link-underline);
     text-decoration-thickness: 1px;
     text-underline-offset: 0.18em;
     -webkit-tap-highlight-color: transparent;
@@ -166,8 +155,8 @@ a[href^="mailto:"] {
 
 .item {
     display: block;
-    margin: 0 -0.75rem;
-    padding: 0.5rem 0.75rem;
+    margin: 0 calc(-1 * var(--space-2));
+    padding: var(--space-1) var(--space-2);
     border-radius: 0.5rem;
     text-decoration: none;
 }
@@ -192,11 +181,21 @@ a[href^="mailto:"] {
 }
 
 .links {
-    margin-top: 12.5rem;
+    margin-top: var(--space-21);
 }
 
-.links p {
+.links p,
+.people-list p {
     margin: 0;
+}
+
+.links p a,
+.people-list a {
+    display: inline-block;
+    max-width: calc(100% + 2 * var(--space-1));
+    margin-inline: calc(-1 * var(--space-1));
+    padding: 0 var(--space-1);
+    overflow-wrap: anywhere;
 }
 
 .centered {
@@ -208,9 +207,9 @@ a[href^="mailto:"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: var(--space-3);
     margin-block: auto;
-    padding-top: 3rem;
+    padding-top: var(--space-8);
     text-align: center;
 }
 
@@ -246,15 +245,16 @@ a[href^="mailto:"] {
     }
 
     .sheet {
-        padding: 3.75rem 0;
+        padding: var(--space-8) 0;
     }
 
     .links {
-        margin-top: 6.25rem;
+        margin-top: var(--space-14);
     }
 
-    .links p + p {
-        margin-top: 0.5rem;
+    .links p + p,
+    .people-list p + p {
+        margin-top: var(--space-1);
     }
 
     .photo {
