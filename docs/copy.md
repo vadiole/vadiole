@@ -91,3 +91,20 @@ title: 404
 404
 
 This page doesn't exist, go back to [vadiole.me](/).
+
+## boing/privacy-policy.html
+
+title: Dimitri / boing / privacy policy
+description: Privacy policy for Boing.
+og:title: Dimitri / boing / privacy policy
+og:description: Privacy policy for Boing.
+
+[Dimitri](/) / boing / privacy policy
+
+boing by [vadiole](https://play.google.com/store/apps/dev?id=4763171503902347202) has no ads or analytics and doesn't send personal data to the developer. Motion readings are processed on the device.
+
+Settings, Studio trial timing, and pictures or sounds you choose to import stay in the app's private storage. Android may include them in backups or device transfers, depending on your settings. Clear the app's storage or uninstall it to remove local data; manage backup copies through your backup provider.
+
+Google Play processes Studio purchases and provides purchase information to restore access. The developer doesn't receive payment-card details. See [Google's privacy policy](https://policies.google.com/privacy).
+
+For privacy questions, write to [contact@vadiole.me](mailto:contact@vadiole.me).
