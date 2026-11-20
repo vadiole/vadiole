@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="description" content="My photos page is under construction.">
+    <meta name="description" content="A selection of photos I've taken on my beloved Fuji X-M5.">
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fdfdfc">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1a18">
     <meta property="og:title" content="Dimitri / photos">
-    <meta property="og:description" content="My photos page is under construction.">
+    <meta property="og:description" content="A selection of photos I've taken on my beloved Fuji X-M5.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vadiole.me/photos">
     <title>Dimitri / photos</title>
@@ -17,30 +17,118 @@
     <link rel="icon" href="asset/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="asset/apple-touch-icon.png">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="photos.css">
+    <script>
+        document.documentElement.classList.add('js');
+    </script>
 </head>
 <body>
-    <main class="sheet centered" style="--offset: 7.42px">
+    <main class="sheet gallery">
         <h1><a href="/">Dimitri</a> <span class="sep" aria-hidden="true">/</span> <span>photos</span></h1>
-        <div class="center">
-            <a class="photo" href="photo/fuji-1.avif" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 16' preserveAspectRatio='none'><filter id='b' color-interpolation-filters='sRGB'><feGaussianBlur stdDeviation='1'/><feComponentTransfer><feFuncA type='discrete' tableValues='1 1'/></feComponentTransfer></filter><image width='100%' height='100%' preserveAspectRatio='none' filter='url(%23b)' href='data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACwAwCdASoYABAAPtFWpEuoJKOhsAgBABoJaQAHBQnGjdnrX2iTgAD+9PI21oMV5HQBMpJ6HuG+2Up+oc7mMw45BPUmO+gH+r/YhuWMbmdGLXYxS/YF2ep8aP7GapWLhW3vZ3DkM5bpMe9s4NqWAAAA'/></svg>&quot;)">
-                <picture>
-                    <source type="image/avif" srcset="photo/fuji-1-1280.avif">
-                    <img src="photo/fuji-1-1280.jpg" width="1280" height="853" alt="Horses grazing on a hill near sea cliffs in the rain, in black and white.">
-                </picture>
-            </a>
-            <p>My photos page is under construction.</p>
+        <p class="intro">A selection of photos I've taken on my beloved Fuji X-M5.</p>
+        <div class="prints">
+            <figure class="print">
+                <a href="photo/fuji-1.avif" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 16' preserveAspectRatio='none'><filter id='b' color-interpolation-filters='sRGB'><feGaussianBlur stdDeviation='1'/><feComponentTransfer><feFuncA type='discrete' tableValues='1 1'/></feComponentTransfer></filter><image width='100%' height='100%' preserveAspectRatio='none' filter='url(%23b)' href='data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADQAwCdASoYABAAPu1kqk4ppaQiMAgBMB2JaQAAW79l6R+eAcv/lgAA/vHNfx82JXk6RkGaJfawOOJ7D8h5R8sUakZJdVSNmcO2ycR1iA7ni1yn+Ata87XuP6idKSOUJvsE0XaqS01AAA=='/></svg>&quot;)">
+                    <picture>
+                        <source type="image/avif" srcset="photo/fuji-1-1280.avif 1280w, photo/fuji-1-2400.avif 2400w" sizes="(min-width: 49rem) 42rem, (min-width: 513px) calc(100vw - 7rem), calc(100vw - 3rem)">
+                        <img src="photo/fuji-1-1280.jpg" width="1280" height="853" alt="Horses grazing on a hill near sea cliffs in the rain, in black and white." fetchpriority="high">
+                    </picture>
+                </a>
+                <figcaption><span data-f="date">2026.05.02</span> <span data-f="focal">23mm</span> <span data-f="shutter">1/125</span> <span data-f="aperture">f/13</span> <span data-f="iso">ISO 320</span> <span data-f="lens">XF23mmF2 R WR</span> <span data-f="film">Acros</span> <span data-f="place">Spain 2026</span></figcaption>
+            </figure>
+            <figure class="print">
+                <a href="photo/fuji-10.avif" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 16' preserveAspectRatio='none'><filter id='b' color-interpolation-filters='sRGB'><feGaussianBlur stdDeviation='1'/><feComponentTransfer><feFuncA type='discrete' tableValues='1 1'/></feComponentTransfer></filter><image width='100%' height='100%' preserveAspectRatio='none' filter='url(%23b)' href='data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAwBACdASoYABAAPu1kqU2ppaQiMAgBMB2JaACdMoADTNHkOrbdoqZlfIAA/ieT44o8Pgh63KwE3cQIbQGeHCgR1vRm6XEzxYzDCiSqa0oMIG4Rim3+HqEwwcnMRVzT2Tx3H8Dg+5cp1hqF8dkCNrvDqAZByhfGPT2AAA=='/></svg>&quot;)">
+                    <picture>
+                        <source type="image/avif" srcset="photo/fuji-10-1280.avif 1280w, photo/fuji-10-2400.avif 2400w" sizes="(min-width: 49rem) 42rem, (min-width: 513px) calc(100vw - 7rem), calc(100vw - 3rem)">
+                        <img src="photo/fuji-10-1280.jpg" width="1280" height="853" alt="A metro station hall lined with rows of round metal panels in gold and green." loading="lazy" decoding="async">
+                    </picture>
+                </a>
+                <figcaption><span data-f="date">2026.03.15</span> <span data-f="focal">23mm</span> <span data-f="shutter">1/400</span> <span data-f="aperture">f/2</span> <span data-f="iso">ISO 8000</span> <span data-f="lens">XF23mmF2 R WR</span> <span data-f="film">Classic Negative</span> <span data-f="place">Czech Republic 2026</span></figcaption>
+            </figure>
+            <figure class="print">
+                <a href="photo/fuji-6.avif" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 16' preserveAspectRatio='none'><filter id='b' color-interpolation-filters='sRGB'><feGaussianBlur stdDeviation='1'/><feComponentTransfer><feFuncA type='discrete' tableValues='1 1'/></feComponentTransfer></filter><image width='100%' height='100%' preserveAspectRatio='none' filter='url(%23b)' href='data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACQAwCdASoYABAAPu1qrU8ppiQiMAgBMB2JaQAAW6UymONq1a8AAP7TI4TCR7Z2DYuiIHPVp+w91FqS7eJ5IOko/O+DD7KeQFUPbbKqFqp4duRQU23LYnfn3tBHQIec61rLggl27rpnwcAA'/></svg>&quot;)">
+                    <picture>
+                        <source type="image/avif" srcset="photo/fuji-6-1280.avif 1280w, photo/fuji-6-2400.avif 2400w" sizes="(min-width: 49rem) 42rem, (min-width: 513px) calc(100vw - 7rem), calc(100vw - 3rem)">
+                        <img src="photo/fuji-6-1280.jpg" width="1280" height="853" alt="A man running along a stormy beach below dark cliffs, in black and white." loading="lazy" decoding="async">
+                    </picture>
+                </a>
+                <figcaption><span data-f="date">2026.01.26</span> <span data-f="focal">31.4mm</span> <span data-f="shutter">1/30</span> <span data-f="aperture">f/4.7</span> <span data-f="iso">ISO 1600</span> <span data-f="lens">XC15-45mmF3.5-5.6 OIS PZ</span> <span data-f="film">Acros</span> <span data-f="place">Tenerife 2026</span></figcaption>
+            </figure>
+            <figure class="print">
+                <a href="photo/fuji-4.avif" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 16' preserveAspectRatio='none'><filter id='b' color-interpolation-filters='sRGB'><feGaussianBlur stdDeviation='1'/><feComponentTransfer><feFuncA type='discrete' tableValues='1 1'/></feComponentTransfer></filter><image width='100%' height='100%' preserveAspectRatio='none' filter='url(%23b)' href='data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JbACdACFS2bGmTX1Uszft0AD+9CUuwWWP2fMfLTzF50SOkNJXgwpNVP7TIe0BY8P0sgqng6i1fZF6LbqCjU7sULAriXhkLJf2R0iObgQLJTY0ApOTZa8A8OAtgWlt1/02/9cT9EAAAA=='/></svg>&quot;)">
+                    <picture>
+                        <source type="image/avif" srcset="photo/fuji-4-1280.avif 1280w, photo/fuji-4-2400.avif 2400w" sizes="(min-width: 49rem) 42rem, (min-width: 513px) calc(100vw - 7rem), calc(100vw - 3rem)">
+                        <img src="photo/fuji-4-1280.jpg" width="1280" height="853" alt="A person watching a huge bonfire throw sparks into the night, with a crowd behind it." loading="lazy" decoding="async">
+                    </picture>
+                </a>
+                <figcaption><span data-f="date">2025.12.20</span> <span data-f="focal">15mm</span> <span data-f="shutter">1/20</span> <span data-f="aperture">f/3.5</span> <span data-f="iso">ISO 1000</span> <span data-f="lens">XC15-45mmF3.5-5.6 OIS PZ</span> <span data-f="film">Classic Chrome</span> <span data-f="place">Germany 2025</span></figcaption>
+            </figure>
+            <figure class="print">
+                <a href="photo/fuji-3.avif" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 16' preserveAspectRatio='none'><filter id='b' color-interpolation-filters='sRGB'><feGaussianBlur stdDeviation='1'/><feComponentTransfer><feFuncA type='discrete' tableValues='1 1'/></feComponentTransfer></filter><image width='100%' height='100%' preserveAspectRatio='none' filter='url(%23b)' href='data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACQAwCdASoYABAAPu1kq04ppaQiMAgBMB2JaQAAW7NB9qgOHQaUAP7TR34bVuOD+eGd8caAyD7oWkz7uhrZlWqMHGH+KIY+W4W5Yyt6l/ql+AAA'/></svg>&quot;)">
+                    <picture>
+                        <source type="image/avif" srcset="photo/fuji-3-1280.avif 1280w, photo/fuji-3-2400.avif 2400w" sizes="(min-width: 49rem) 42rem, (min-width: 513px) calc(100vw - 7rem), calc(100vw - 3rem)">
+                        <img src="photo/fuji-3-1280.jpg" width="1280" height="853" alt="A parent and child with a sled on a snowy hill above the city, in black and white." loading="lazy" decoding="async">
+                    </picture>
+                </a>
+                <figcaption><span data-f="date">2025.11.23</span> <span data-f="focal">45mm</span> <span data-f="shutter">1/1000</span> <span data-f="aperture">f/6.4</span> <span data-f="iso">ISO 1600</span> <span data-f="lens">XC15-45mmF3.5-5.6 OIS PZ</span> <span data-f="film">Acros</span> <span data-f="place">Poland 2025</span></figcaption>
+            </figure>
+            <figure class="print">
+                <a href="photo/fuji-7.avif" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 16' preserveAspectRatio='none'><filter id='b' color-interpolation-filters='sRGB'><feGaussianBlur stdDeviation='1'/><feComponentTransfer><feFuncA type='discrete' tableValues='1 1'/></feComponentTransfer></filter><image width='100%' height='100%' preserveAspectRatio='none' filter='url(%23b)' href='data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JZQCdAC0iaJSdljq3EAD+7eR3StqhNbUr+c7+8xNPbLHuc6X7m9h+POWKskK8+Ia/cqiy2pqjTGsQMq4P8eXh+Yc5ynIdUQWpeAAA'/></svg>&quot;)">
+                    <picture>
+                        <source type="image/avif" srcset="photo/fuji-7-1280.avif 1280w, photo/fuji-7-2400.avif 2400w" sizes="(min-width: 49rem) 42rem, (min-width: 513px) calc(100vw - 7rem), calc(100vw - 3rem)">
+                        <img src="photo/fuji-7-1280.jpg" width="1280" height="853" alt="Footprints in sand in warm evening light, with legs stepping out of the frame." loading="lazy" decoding="async">
+                    </picture>
+                </a>
+                <figcaption><span data-f="date">2026.02.01</span> <span data-f="focal">45mm</span> <span data-f="shutter">1/320</span> <span data-f="aperture">f/14</span> <span data-f="iso">ISO 640</span> <span data-f="lens">XC15-45mmF3.5-5.6 OIS PZ</span> <span data-f="film">Classic Negative</span> <span data-f="place">Tenerife 2026</span></figcaption>
+            </figure>
+            <figure class="print">
+                <a href="photo/fuji-11.avif" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 16' preserveAspectRatio='none'><filter id='b' color-interpolation-filters='sRGB'><feGaussianBlur stdDeviation='1'/><feComponentTransfer><feFuncA type='discrete' tableValues='1 1'/></feComponentTransfer></filter><image width='100%' height='100%' preserveAspectRatio='none' filter='url(%23b)' href='data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwBACdASoYABAAPu1kqk4ppaQiMAgBMB2JaQAAW+wPcnBpzEZZzdLNcAAA/up5gTZwJc1YWH9eIzcyyZSWGT93nUdBIBZYj0nmNEVwA0VrCkB3F82GY/cqdQPsP5T83YacpJNIiRKK96pwYctj88ATzIUAAA=='/></svg>&quot;)">
+                    <picture>
+                        <source type="image/avif" srcset="photo/fuji-11-1280.avif 1280w, photo/fuji-11-2400.avif 2400w" sizes="(min-width: 49rem) 42rem, (min-width: 513px) calc(100vw - 7rem), calc(100vw - 3rem)">
+                        <img src="photo/fuji-11-1280.jpg" width="1280" height="853" alt="Concrete stairs rising in a zigzag against a pale sky, in black and white." loading="lazy" decoding="async">
+                    </picture>
+                </a>
+                <figcaption><span data-f="date">2026.04.06</span> <span data-f="focal">23mm</span> <span data-f="shutter">1/125</span> <span data-f="aperture">f/5.6</span> <span data-f="iso">ISO 320</span> <span data-f="lens">XF23mmF2 R WR</span> <span data-f="film">Acros</span> <span data-f="place">Poland 2026</span></figcaption>
+            </figure>
+            <figure class="print">
+                <a href="photo/fuji-5.avif" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 16' preserveAspectRatio='none'><filter id='b' color-interpolation-filters='sRGB'><feGaussianBlur stdDeviation='1'/><feComponentTransfer><feFuncA type='discrete' tableValues='1 1'/></feComponentTransfer></filter><image width='100%' height='100%' preserveAspectRatio='none' filter='url(%23b)' href='data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAwCdASoYABAAPu1kqU2ppaQiMAgBMB2JbACdACHM65gAxFMAAP7w0G3DQJEOpE0WEXGQRzRYYnAl9aR1h+xQJibRvpdHog8BWYS/+Px/AMP2ZaNGMZSAAAA='/></svg>&quot;)">
+                    <picture>
+                        <source type="image/avif" srcset="photo/fuji-5-1280.avif 1280w, photo/fuji-5-2400.avif 2400w" sizes="(min-width: 49rem) 42rem, (min-width: 513px) calc(100vw - 7rem), calc(100vw - 3rem)">
+                        <img src="photo/fuji-5-1280.jpg" width="1280" height="853" alt="A red flare glowing among people on a dark hill above the city lights at night." loading="lazy" decoding="async">
+                    </picture>
+                </a>
+                <figcaption><span data-f="date">2026.01.01</span> <span data-f="focal">15.6mm</span> <span data-f="shutter">1/20</span> <span data-f="aperture">f/3.5</span> <span data-f="iso">ISO 10000</span> <span data-f="lens">XC15-45mmF3.5-5.6 OIS PZ</span> <span data-f="film">Classic Negative</span> <span data-f="place">Poland 2026</span></figcaption>
+            </figure>
+            <figure class="print tall">
+                <a href="photo/fuji-8.avif" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 24' preserveAspectRatio='none'><filter id='b' color-interpolation-filters='sRGB'><feGaussianBlur stdDeviation='1'/><feComponentTransfer><feFuncA type='discrete' tableValues='1 1'/></feComponentTransfer></filter><image width='100%' height='100%' preserveAspectRatio='none' filter='url(%23b)' href='data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABwBACdASoQABgAPu1iqU2ppaOiMAgBMB2JaQAFEB7w0DgF/+eoiD8vFjOj7AD+YWq8HTgxyx7Gyw2XpfaCLW4O5yCEHL/1dQ9gRyCSQ0/LiKZmfFByuRegYgfexWYpHb/dZzonVce7baOcOJJpxer4wLlNEQRvcdDVbXKexA0KM0GBXWLkd76xstd9VzPO/0b9crBSnedMVsNipDNiNHq9Qi0IAAAA'/></svg>&quot;)">
+                    <picture>
+                        <source type="image/avif" srcset="photo/fuji-8-1280.avif 853w, photo/fuji-8-2400.avif 1600w" sizes="(min-width: 49rem) 26rem, (min-width: 513px) calc(62vw - 4.5rem), calc(62vw - 2rem)">
+                        <img src="photo/fuji-8-1280.jpg" width="853" height="1280" alt="People on a wet cobblestone street in backlight, beside a kiosk covered in torn posters, in black and white." loading="lazy" decoding="async">
+                    </picture>
+                </a>
+                <figcaption><span data-f="date">2026.02.24</span> <span data-f="focal">23mm</span> <span data-f="shutter">1/1000</span> <span data-f="aperture">f/5.6</span> <span data-f="iso">ISO 1600</span> <span data-f="lens">XF23mmF2 R WR</span> <span data-f="film">Acros</span> <span data-f="place">Poland 2026</span></figcaption>
+            </figure>
+            <figure class="print">
+                <a href="photo/fuji-9.avif" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 16' preserveAspectRatio='none'><filter id='b' color-interpolation-filters='sRGB'><feGaussianBlur stdDeviation='1'/><feComponentTransfer><feFuncA type='discrete' tableValues='1 1'/></feComponentTransfer></filter><image width='100%' height='100%' preserveAspectRatio='none' filter='url(%23b)' href='data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYwC7IKoDgCjG/SqRdn1Y/3PH39BAAPkwCcCgdkXWlWaIhHIOzUykWaqFXTUWw/s3tDwVECm6+rTeJg94gt6RrSXnHsQWjeQYZAoP9o8itNwtJtEJEY23yUbd6HC2vCQxCzJX2XUwwpM/8USmU7Ye0DMEqnNQgAA='/></svg>&quot;)">
+                    <picture>
+                        <source type="image/avif" srcset="photo/fuji-9-1280.avif 1280w, photo/fuji-9-2400.avif 2400w" sizes="(min-width: 49rem) 42rem, (min-width: 513px) calc(100vw - 7rem), calc(100vw - 3rem)">
+                        <img src="photo/fuji-9-1280.jpg" width="1280" height="853" alt="A worker in an orange suit behind red and white barriers and crumpled plastic sheeting." loading="lazy" decoding="async">
+                    </picture>
+                </a>
+                <figcaption><span data-f="date">2026.03.11</span> <span data-f="focal">23mm</span> <span data-f="shutter">1/640</span> <span data-f="aperture">f/2</span> <span data-f="iso">ISO 1250</span> <span data-f="lens">XF23mmF2 R WR</span> <span data-f="film">Classic Negative</span> <span data-f="place">Poland 2026</span></figcaption>
+            </figure>
+            <figure class="print">
+                <a href="photo/fuji-2.avif" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 16' preserveAspectRatio='none'><filter id='b' color-interpolation-filters='sRGB'><feGaussianBlur stdDeviation='1'/><feComponentTransfer><feFuncA type='discrete' tableValues='1 1'/></feComponentTransfer></filter><image width='100%' height='100%' preserveAspectRatio='none' filter='url(%23b)' href='data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAwCdASoYABAAPu1iqU2ppaOiMAgBMB2JQBOgDSvqJpYf0WnQIAD+/kn+sXXwSYbUMZEwrZHBozflSBUaOGQJG6E0dR4eMGwnhx1TqWeSgGdKWA78k0AAAAA='/></svg>&quot;)">
+                    <picture>
+                        <source type="image/avif" srcset="photo/fuji-2-1280.avif 1280w, photo/fuji-2-2400.avif 2400w" sizes="(min-width: 49rem) 42rem, (min-width: 513px) calc(100vw - 7rem), calc(100vw - 3rem)">
+                        <img src="photo/fuji-2-1280.jpg" width="1280" height="853" alt="Red stage lights cutting through a dark crowd at night." loading="lazy" decoding="async">
+                    </picture>
+                </a>
+                <figcaption><span data-f="date">2025.09.06</span> <span data-f="focal">15mm</span> <span data-f="shutter">1/6</span> <span data-f="aperture">f/3.5</span> <span data-f="iso">ISO 8000</span> <span data-f="lens">XC15-45mmF3.5-5.6 OIS PZ</span> <span data-f="film">Classic Negative</span> <span data-f="place">Germany 2025</span></figcaption>
+            </figure>
         </div>
+        <div class="grain" aria-hidden="true"></div>
     </main>
-    <script>
-        const img = document.querySelector('.photo img');
-        const cached = img.complete;
-        if (!cached) {
-            const slow = setTimeout(() => img.classList.add('slow'), 200);
-            img.addEventListener('load', () => {
-                clearTimeout(slow);
-                img.classList.remove('slow');
-            }, { once: true });
-        }
-    </script>
+    <script type="module" src="photos.js"></script>
 </body>
 </html>

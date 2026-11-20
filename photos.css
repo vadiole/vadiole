@@ -1,0 +1,204 @@
+:root {
+    --is-dark: 0;
+    --wall-max: 47rem;
+    --wall-dim: 0%;
+    --print-gap: 10.5rem;
+    --tall-width: 0.62;
+    --photo-width: 1;
+
+    --lamp-k: #ffb16e;
+    --lamp-chroma: 35%;
+    --lamp: color-mix(in oklab, var(--lamp-k) var(--lamp-chroma), #fff);
+
+    --shadow-y-d: 6px;
+    --shadow-blur-d: 14px;
+    --shadow-spread-d: -4px;
+    --shadow-alpha-d: 0.55;
+    --shadow-y-l: 6px;
+    --shadow-blur-l: 18px;
+    --shadow-spread-l: -8px;
+    --shadow-alpha-l: 0.09;
+
+    --unlit: 0.3;
+
+    --grain-d: 0.025;
+    --grain-l: 0.02;
+    --grain-size: 197px;
+    --grain-black: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='197' height='197'%3E%3Cfilter id='n' x='0' y='0' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' seed='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='2.2' intercept='-.6'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    --grain-white: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='197' height='197'%3E%3Cfilter id='n' x='0' y='0' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' seed='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='2.2' intercept='-.6'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    --mottle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512'%3E%3Cfilter id='m' x='0' y='0' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.012' numOctaves='4' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 .08 -.03'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23m)'/%3E%3C/svg%3E");
+    --grain: var(--grain-black);
+
+    --caption-gap: 0.75rem;
+    --caption-align: flex-start;
+    --caption-size: 0.8125rem;
+    --f-date: none;
+    --f-focal: inline;
+    --f-shutter: inline;
+    --f-aperture: inline;
+    --f-iso: none;
+    --f-lens: none;
+    --f-film: none;
+    --f-place: inline;
+
+    --bg: light-dark(#fdfdfc, color-mix(in oklab, #1b1a18, #000 var(--wall-dim)));
+    --outside: light-dark(#fbfbfa, color-mix(in oklab, #191916, #000 var(--wall-dim)));
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --is-dark: 1;
+        --grain: var(--grain-white);
+    }
+}
+
+html:has(.gallery),
+body:has(.gallery) {
+    overflow-x: clip;
+}
+
+.gallery {
+    position: relative;
+    max-width: var(--wall-max);
+}
+
+@media (min-width: 513px) and (min-height: 513px) {
+    .gallery {
+        width: calc(round(down, min(100%, var(--wall-max)) - 1px, var(--period)) + 1px);
+    }
+}
+
+.gallery > h1,
+.intro,
+.print figcaption {
+    position: relative;
+    z-index: 3;
+}
+
+.intro {
+    max-width: 42rem;
+}
+
+.grain {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    background:
+        var(--grain) 0 0 / var(--grain-size),
+        var(--mottle) 0 0 / 512px;
+    opacity: calc(var(--grain-l) + (var(--grain-d) - var(--grain-l)) * var(--is-dark));
+}
+
+.prints {
+    display: flex;
+    flex-direction: column;
+    gap: var(--print-gap);
+    margin: var(--space-14) calc(-1 * var(--space-5)) 0;
+    padding-inline: var(--space-5);
+}
+
+.print {
+    position: relative;
+    width: calc(100% * var(--photo-width));
+    margin: 0;
+    align-self: center;
+}
+
+.print.tall {
+    width: calc(100% * var(--photo-width) * var(--tall-width));
+}
+
+.print a {
+    position: relative;
+    z-index: 3;
+    display: block;
+    background: center / cover;
+    box-shadow:
+        0
+        calc(var(--shadow-y-l) + (var(--shadow-y-d) - var(--shadow-y-l)) * var(--is-dark))
+        calc(var(--shadow-blur-l) + (var(--shadow-blur-d) - var(--shadow-blur-l)) * var(--is-dark))
+        calc(var(--shadow-spread-l) + (var(--shadow-spread-d) - var(--shadow-spread-l)) * var(--is-dark))
+        color-mix(in srgb, light-dark(#3c321e, #080604) calc((var(--shadow-alpha-l) + (var(--shadow-alpha-d) - var(--shadow-alpha-l)) * var(--is-dark)) * 100%), transparent);
+}
+
+.print img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.light {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.dust {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.print a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #000;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.js .light,
+.js .dust {
+    opacity: var(--lvl, 0);
+}
+
+.light * {
+    --lvl: 0;
+}
+
+.js .print a::after {
+    opacity: calc((1 - var(--lvl, 0)) * (1 - var(--unlit)) * var(--is-dark));
+}
+
+.near .light,
+.near .dust,
+.near a::after {
+    will-change: opacity;
+}
+
+.print figcaption {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: var(--caption-align);
+    column-gap: var(--caption-gap);
+    margin-top: var(--space-2);
+    color: var(--muted);
+    font-size: var(--caption-size);
+    font-variant-numeric: tabular-nums;
+}
+
+[data-f="date"] { display: var(--f-date); }
+[data-f="focal"] { display: var(--f-focal); }
+[data-f="shutter"] { display: var(--f-shutter); }
+[data-f="aperture"] { display: var(--f-aperture); }
+[data-f="iso"] { display: var(--f-iso); }
+[data-f="lens"] { display: var(--f-lens); }
+[data-f="film"] { display: var(--f-film); }
+[data-f="place"] { display: var(--f-place); }
+
+@media (forced-colors: active) {
+    .light,
+    .grain {
+        display: none;
+    }
+}
+
+@media (max-width: 512px) {
+    .prints {
+        --print-gap: var(--space-14);
+        margin-inline: calc(-1 * max(1.5rem, env(safe-area-inset-left)));
+        padding-inline: max(1.5rem, env(safe-area-inset-left));
+    }
+}

@@ -77,15 +77,46 @@ Here I collect personal websites I like and recommend. You might find great advi
 ## photos.html
 
 title: Dimitri / photos
-description: My photos page is under construction.
+description: A selection of photos I've taken on my beloved Fuji X-M5.
 og:title: Dimitri / photos
-og:description: My photos page is under construction.
+og:description: A selection of photos I've taken on my beloved Fuji X-M5.
 
 [Dimitri](/) / photos
 
-![Horses grazing on a hill near sea cliffs in the rain, in black and white.](/photo/fuji-1.avif)
+A selection of photos I've taken on my beloved Fuji X-M5.
 
-My photos page is under construction.
+![Horses grazing on a hill near sea cliffs in the rain, in black and white.](/photo/fuji-1.avif)\
+23mm 1/125 f/13 Spain 2026
+
+![A metro station hall lined with rows of round metal panels in gold and green.](/photo/fuji-10.avif)\
+23mm 1/400 f/2 Czech Republic 2026
+
+![A man running along a stormy beach below dark cliffs, in black and white.](/photo/fuji-6.avif)\
+31.4mm 1/30 f/4.7 Tenerife 2026
+
+![A person watching a huge bonfire throw sparks into the night, with a crowd behind it.](/photo/fuji-4.avif)\
+15mm 1/20 f/3.5 Germany 2025
+
+![A parent and child with a sled on a snowy hill above the city, in black and white.](/photo/fuji-3.avif)\
+45mm 1/1000 f/6.4 Poland 2025
+
+![Footprints in sand in warm evening light, with legs stepping out of the frame.](/photo/fuji-7.avif)\
+45mm 1/320 f/14 Tenerife 2026
+
+![Concrete stairs rising in a zigzag against a pale sky, in black and white.](/photo/fuji-11.avif)\
+23mm 1/125 f/5.6 Poland 2026
+
+![A red flare glowing among people on a dark hill above the city lights at night.](/photo/fuji-5.avif)\
+15.6mm 1/20 f/3.5 Poland 2026
+
+![People on a wet cobblestone street in backlight, beside a kiosk covered in torn posters, in black and white.](/photo/fuji-8.avif)\
+23mm 1/1000 f/5.6 Poland 2026
+
+![A worker in an orange suit behind red and white barriers and crumpled plastic sheeting.](/photo/fuji-9.avif)\
+23mm 1/640 f/2 Poland 2026
+
+![Red stage lights cutting through a dark crowd at night.](/photo/fuji-2.avif)\
+15mm 1/6 f/3.5 Germany 2025
 
 ## 404.html
 
