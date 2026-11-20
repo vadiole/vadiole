@@ -49,6 +49,7 @@ I think it’s a wonderful idea to have your own corner of the internet.
 
 Here I collect personal websites I like and recommend. You might find great advice, ideas, projects, prototypes, photos, and much more.
 
+[alanagoyal.com](https://www.alanagoyal.com/)
 [brianlovin.com](https://brianlovin.com/)
 [chankarunamuni.com](https://www.chankarunamuni.com/)
 [daneden.me](https://daneden.me/)
@@ -59,6 +60,7 @@ Here I collect personal websites I like and recommend. You might find great advi
 [julian.digital](https://julian.digital/)
 [juliezhuo.com](https://juliezhuo.com/)
 [karrisaarinen.com](https://karrisaarinen.com/)
+[knowingless.com](https://knowingless.com/)
 [leerob.com](https://leerob.com/)
 [nelson.co](https://nelson.co/)
 [paco.me](https://paco.me/)
@@ -68,6 +70,7 @@ Here I collect personal websites I like and recommend. You might find great advi
 [rauno.me](https://rauno.me/)
 [rsms.me](https://rsms.me/)
 [shud.in](https://shud.in/)
+[sonnet.io](https://sonnet.io/)
 [stephango.com](https://stephango.com/)
 [tonsky.me](https://tonsky.me/)
 
