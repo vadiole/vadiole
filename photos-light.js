@@ -262,4 +262,5 @@ const schedule = () => {
 new ResizeObserver(schedule).observe(prints[0].parentElement);
 phone.addEventListener('change', schedule);
 darkScheme.addEventListener('change', schedule);
+document.addEventListener('themechange', schedule);
 refresh();
