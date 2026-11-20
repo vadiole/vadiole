@@ -4,7 +4,7 @@ const phone = matchMedia('(max-width: 512px)');
 const darkScheme = matchMedia('(prefers-color-scheme: dark)');
 
 const params = {
-    side: 'alternate', lightX: 559, lightY: -0.19, lightXM: 24, lightYM: 0.3,
+    side: 'alternate', lightX: 559, lightY: -0.19, lightXM: 24, lightYM: -0.19,
     margin: 2, soft: 3, wallLit: 0.35, falloff: 0,
     beams: true, beam: 2.9, beamFade: 1,
     rampFrom: 0.1, rampTo: 0.5, rise: 90, loadRise: 900, waitImage: true,

@@ -200,7 +200,21 @@ body:has(.gallery) {
     }
 }
 
+@media (max-width: 512px), (max-height: 512px) {
+    .grain {
+        --gutter: 1rem;
+        --gutter-l: max(var(--gutter), env(safe-area-inset-left));
+        --gutter-r: max(var(--gutter), env(safe-area-inset-right));
+        left: calc((100% - 100vw - var(--gutter-l) + var(--gutter-r)) / 2);
+        right: calc((100% - 100vw + var(--gutter-l) - var(--gutter-r)) / 2);
+    }
+}
+
 @media (max-width: 512px) {
+    .grain {
+        --gutter: 1.5rem;
+    }
+
     .prints {
         --print-gap: var(--space-14);
         margin-inline: calc(-1 * max(1.5rem, env(safe-area-inset-left)));
