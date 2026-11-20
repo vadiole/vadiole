@@ -38,7 +38,7 @@
     --f-aperture: inline;
     --f-iso: none;
     --f-lens: none;
-    --f-film: none;
+    --f-film: inline;
     --f-place: inline;
 
     --bg: light-dark(#fdfdfc, color-mix(in oklab, #1b1a18, #000 var(--wall-dim)));
@@ -213,6 +213,17 @@ body:has(.gallery) {
 @media (max-width: 512px) {
     .grain {
         --gutter: 1.5rem;
+    }
+
+    .print figcaption::before {
+        content: "";
+        flex-basis: 100%;
+        order: 1;
+    }
+
+    [data-f="film"],
+    [data-f="place"] {
+        order: 2;
     }
 
     .prints {
