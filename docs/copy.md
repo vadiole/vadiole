@@ -18,6 +18,9 @@ Now taking a break from work.
 
 Projects
 
+[boing](https://play.google.com/store/apps/details?id=vadiole.boing)
+realistic fidget ball
+
 [tremor](https://play.google.com/store/apps/details?id=vadiole.tremor)
 haptic tester for android
 
