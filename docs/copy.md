@@ -29,7 +29,7 @@ character and emoji explorer
 
 Connections
 
-You can find my code on [github](https://github.com/vadiole), and write me at [xdmitree@gmail.com](mailto:xdmitree@gmail.com).
+You can find my code on [github](https://github.com/vadiole), follow me on [twitter](https://x.com/vadiole_), and write me at [xdmitree@gmail.com](mailto:xdmitree@gmail.com).
 
 Things I like
 
