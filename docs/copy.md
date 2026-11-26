@@ -145,3 +145,20 @@ Settings, Studio trial timing, and pictures or sounds you choose to import stay 
 Google Play processes Studio purchases and provides purchase information to restore access. The developer doesn't receive payment-card details. See [Google's privacy policy](https://policies.google.com/privacy).
 
 For privacy questions, write to [contact@vadiole.me](mailto:contact@vadiole.me).
+
+## bugged/privacy-policy.html
+
+title: Dimitri / bugged / privacy policy
+description: Privacy policy for Bugged.
+og:title: Dimitri / bugged / privacy policy
+og:description: Privacy policy for Bugged.
+
+[Dimitri](/) / bugged / privacy policy
+
+bugged by [vadiole](https://play.google.com/store/apps/dev?id=4763171503902347202) has no ads or analytics and no internet access, so nothing you copy or open leaves your phone. Links are cleaned on the device.
+
+To clean links you copy, the app uses Android's Accessibility service. It looks at Copy buttons you tap and the text you copy, and keeps none of it.
+
+The app stores your browser choice and the number of links it has cleaned. Clear the app's storage or uninstall it to remove them.
+
+For privacy questions, write to [bugged@vadiole.me](mailto:bugged@vadiole.me).
