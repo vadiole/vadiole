@@ -18,6 +18,9 @@ Now taking a break from work.
 
 Projects
 
+[bugged](https://play.google.com/store/apps/details?id=vadiole.bugged)
+link cleaner
+
 [boing](https://play.google.com/store/apps/details?id=vadiole.boing)
 realistic fidget ball
 
